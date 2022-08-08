@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background: rgb(76, 76, 89);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+section {
+    margin: 10px;
+}
+
+.form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input,
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+textarea {
+    flex: 1 1 0%;
+    overflow: auto;
+    resize: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: white;
+}
+
+.form-input {
+    width: 80%;
+    padding: 12px;
+    background: rgb(47, 47, 56);
+    color: white;
+    font-size: 1.25em;
+    border-radius: 20px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.form-input::placeholder {
+    font-size: 0.8em;
+}
+
+.form-input1 {
+    /* width: 70%; */
+    padding: 12px;
+    color: white;
+    background-color: transparent;
+    font-size: 1em;
+    border-radius: 20px;
+}
+
+.form-input1::-webkit-scrollbar {
+    display: none;
+}
+
+.form-input1:focus {
+    flex: 1 1 0%;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+#addTask {
+    margin-left: 10px;
+    width: auto;
+    padding: 12px;
+    border-radius: 25px;
+    background: none;
+    border: 0px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(82, 236, 11), rgb(8, 209, 236));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 1.75em;
+}
+
+#saveTask {
+    display: none;
+    margin-left: 10px;
+    width: auto;
+    padding: 12px;
+    border-radius: 25px;
+    background: none;
+    border: 0px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(236, 131, 11), rgb(108, 189, 16));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 1.75em;
+}
+
+.add-button:hover {
+    opacity: 0.8;
+}
+
+.empty {
+    padding: 25px;
+    text-align: center;
+    color: red;
+    font-size: 1.25em;
+}
+
+#items {
+    padding: 5px;
+    border-radius: 25px;
+    background: rgb(39, 39, 51);
+    margin: 2% 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-button {
+    margin-left: 10px;
+    width: auto;
+    padding: 12px;
+    border-radius: 25px;
+    background: none;
+    border: 0px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(120, 6, 172), rgb(236, 8, 187));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+.edit-button:hover {
+    opacity: 0.8;
+}
+
+.buttons {
+    display: flex;
+}
+
+.delete-button {
+    margin-left: 10px;
+    width: auto;
+    padding: 12px;
+    border-radius: 25px;
+    background: none;
+    border: 0px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 0, 64));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 1em;
+}
+
+.delete-button:hover {
+    opacity: 0.8;
+}
